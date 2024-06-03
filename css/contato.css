@@ -1,0 +1,56 @@
+.localizacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 100px;
+}
+
+.localizacao h1 {
+  font-family: "Inter", monospace;
+  font-size: 3rem;
+  text-align: center;
+  grid-column: 1/-1;
+  margin-bottom: 40px;
+}
+
+.mapa-container {
+  max-width: 600px;
+  border-radius: 6px;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.informacoes span {
+  font-family: "Lato", monospace;
+  font-weight: bold;
+}
+
+.informacoes li {
+  font-family: "Roboto", monospace;
+  font-size: 1.2rem;
+  color: #313743;
+  position: relative;
+  margin-left: 15px;
+}
+
+.informacoes li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -18px;
+  width: 10px;
+  height: 5px;
+  background: #3ca237;
+  border-radius: 6px;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  margin-left: 35px;
+}

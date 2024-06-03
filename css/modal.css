@@ -1,0 +1,251 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.modal-container.ativo {
+  display: flex;
+}
+
+.modal {
+  color: #333333;
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  border: 10px solid #073a05;
+  box-shadow: 0 0 5px 10px white;
+  position: relative;
+}
+
+@keyframes showModal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal {
+  animation: showModal 0.3s forwards;
+}
+
+.fechar {
+  position: absolute;
+  background: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  width: 35px;
+  height: 35px;
+  top: -25px;
+  right: -25px;
+}
+
+.fechar:hover {
+  transition: 0.3s;
+  background: #e74e4e;
+}
+
+.formulario-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Lato", monospace;
+}
+
+.login {
+  font-family: "Inter", monospace;
+  font-weight: bold;
+  color: #333333;
+  max-width: fit-content;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.login::after {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(
+    #117f09,
+    #2e9923,
+    #4cb23d,
+    #69cc56,
+    #87e570
+  );
+}
+
+.formulario-login label {
+  font-family: "Manrope", monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.formulario-login input {
+  margin-bottom: 20px;
+  padding: 0.5rem 0.3rem;
+  font-family: "Inter", monospace;
+  font-weight: 500;
+  min-width: 200px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 1px 2px 6px 1px grey;
+}
+
+.formulario-login input:focus {
+  outline: 2px solid #7fdf69;
+}
+
+.formulario-login button {
+  width: 150px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: white;
+  color: #606060;
+  border: 1px solid #393939;
+  box-shadow: 1px 1px 4px #808080;
+  border-radius: 6px;
+  font-family: "Inter", monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.06rem;
+  transition: 0.3s;
+}
+
+.contas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 10px 5px;
+}
+
+.contas a {
+  transition: 0.3s;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px #dfdfdf;
+}
+
+.contas a:hover {
+  transform: scale(1.06);
+  transition: 0.3s;
+  box-shadow: 0 20px 10px 2px #dfdfdf;
+}
+
+.contas img {
+  max-width: 45px;
+  cursor: pointer;
+}
+
+.formulario-login button:hover {
+  background: #e9eaf0;
+  color: black;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.modal-download {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.modal-download.ativo {
+  display: flex;
+}
+
+.modal-baixar {
+  background: white;
+  padding: 70px 50px;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px white;
+  flex-direction: column;
+}
+
+@keyframes showDonwload {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transform: scale(1);
+  }
+}
+
+.ativo .modal-baixar {
+  animation: showDonwload 0.4s forwards;
+}
+
+.modal-baixar p {
+  font-family: "Lato", monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aviso {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aviso p {
+  grid-column: 1/-1;
+}
+
+.aviso a {
+  justify-self: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #dfdfdf;
+}
+
+.plataformas {
+  display: grid;
+  grid-column: 1/ -1;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 70px;
+  margin-top: 30px;
+}
+
+.plataformas a {
+  transition: 0.3s;
+}
+
+.plataformas a:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}

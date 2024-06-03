@@ -1,0 +1,111 @@
+.introducao-bg {
+  background-image: linear-gradient(
+    #87e570,
+    #69cc56,
+    #4cb23d,
+    #117f09,
+    #2e9923
+  );
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.introducao {
+  background-color: #fff;
+  display: flex;
+  border-radius: 8px;
+  padding: 60px 40px;
+  justify-content: center;
+}
+
+.introducao-content {
+  max-width: 600px;
+}
+
+.introducao-content h1 {
+  font-family: "Inter";
+  font-size: 3rem;
+  font-weight: bold;
+  color: #202020;
+  text-shadow: 2px 2px 1px #acada9;
+  text-align: left;
+  margin-bottom: 20px;
+  letter-spacing: 0.1rem;
+}
+
+.introducao-content p {
+  font-family: "Lato";
+  font-size: 1.15rem;
+  color: #494949;
+  line-height: 1.3rem;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.screenshot {
+  padding: 0 40px;
+  margin-left: 10px;
+  max-width: 600px;
+}
+
+.screenshot img {
+  border-radius: 6px;
+}
+
+.introducao-content .button {
+  font-family: "Roboto";
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #616161;
+  letter-spacing: 0.05rem;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  color: white;
+  background: #519f42;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 2px 4px 5px #c0c0c0;
+}
+
+.introducao-content .button:hover {
+  background-color: #117f09;
+  box-shadow: 2px 4px 10px #c0c0c0;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  transition: 0.3s;
+}
+
+.icones-content {
+  display: flex;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.icones {
+  display: flex;
+  gap: 10px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  background: #9ddb8a77;
+  padding: 10px 20px;
+  transition: 0.4s;
+}
+
+.icones:hover {
+  box-shadow: 0 3px 6px #dfdfdf;
+}
+
+.icones img {
+  max-width: 35px;
+}
+
+.icones p {
+  font-family: "Encode Sans Expanded", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+  color: #505050;
+  margin: 0;
+}
