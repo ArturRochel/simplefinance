@@ -70,6 +70,7 @@
 
 .menu-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   font-family: "Lato", "Roboto", Arial;
   font-size: 1.2rem;
@@ -81,6 +82,9 @@
 }
 
 #baixe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 12px;
   background-color: #69cc56;
   border-radius: 6px;
@@ -97,6 +101,9 @@
 }
 
 #login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 12px;
   background-color: #69cc56;
   border-radius: 6px;
@@ -110,4 +117,42 @@
   color: black;
   /* box-shadow: 2px 3px 5px #9fe08c; */
   transition: 0.4s;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .menu img {
+    max-width: 200px;
+  }
+
+  .menu li {
+    font-size: 0.9rem;
+  }
+
+  .menu-buttons {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  #baixar,
+  #login {
+    padding: 4px 6px;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .menu img {
+    max-width: 150px;
+  }
 }

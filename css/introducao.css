@@ -109,3 +109,37 @@
   color: #505050;
   margin: 0;
 }
+
+@media (max-width: 700px) {
+  .introducao-bg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .introducao {
+    padding: 40px 20px;
+  }
+
+  .screenshot {
+    display: none;
+  }
+
+  .icones {
+    gap: 5px;
+    padding: 5px 10px;
+  }
+
+  .introducao-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .introducao-content p {
+    font-size: 1rem;
+  }
+
+  .icones p {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    text-align: left;
+    font-weight: bold;
+  }
+}

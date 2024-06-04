@@ -51,3 +51,38 @@
   text-align: left;
   font-weight: 500;
 }
+
+@media (max-width: 700px) {
+  .vantagens {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5px;
+  }
+  .vantagens img {
+    justify-self: center;
+    max-width: 200px;
+  }
+
+  .vantagens-content h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .vantagens-list h2 {
+    font-size: 1.2rem;
+    gap: 5px;
+  }
+
+  .vantagens-list img {
+    width: 25px;
+  }
+
+  .vantagens-list {
+    gap: 20px;
+  }
+
+  .vantagens-list p {
+    font-size: 0.875rem;
+  }
+}
