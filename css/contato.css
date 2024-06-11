@@ -102,3 +102,18 @@
     align-items: center;
   }
 }
+
+[data-semana]::after {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: red;
+  margin-left: 5px;
+}
+
+[data-semana].aberto::after {
+  background: #3f4;
+}
