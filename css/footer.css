@@ -5,8 +5,7 @@
   padding: 30px 20px;
   justify-content: space-around;
   align-items: center;
-  background-color: #78f962;
-  background-image: linear-gradient(45deg, #77ba6ba7 0%, #75a4d7c5 100%);
+  background-image: linear-gradient(to top, #e2ebf0 0%, #cfd9df 100%);
 }
 
 .logo img {
@@ -24,7 +23,7 @@
   font-weight: 400;
   letter-spacing: 0.05rem;
   font-size: 0.9rem;
-  color: #e4e4e4;
+  color: #111;
   grid-column: 1/-1;
   text-align: center;
   margin-top: 20px;

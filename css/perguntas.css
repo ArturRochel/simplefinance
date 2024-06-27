@@ -1,11 +1,5 @@
 .accordion-bg {
-  background-image: linear-gradient(
-    #c1ffab4e,
-    #9ede8a58,
-    #9ede8a4c,
-    #a0d19079,
-    #87e57050
-  );
+  background-image: linear-gradient(to top, #e2ebf0 0%, #cfd9df 100%);
   backdrop-filter: opacity(50%);
 }
 .accordion-list {

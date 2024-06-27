@@ -1,6 +1,7 @@
 .localizacao {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
   padding: 60px 100px;
 }
 

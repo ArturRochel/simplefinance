@@ -1,10 +1,9 @@
 export default function initMenuMobile() {
   const abrirMenu = document.querySelector(".abrirMenu");
-  const fecharMenu = document.querySelector(".fecharMenu");
   const menuMobile = document.querySelector(".menu-mobile");
   const eventos = ["touchstart", "click"];
 
-  if (abrirMenu && fecharMenu && menuMobile) {
+  if (abrirMenu && menuMobile) {
     function handleClick() {
       menuMobile.classList.add("ativo");
       outsideClick(menuMobile, () => {
@@ -42,7 +41,6 @@ export default function initMenuMobile() {
 
     eventos.forEach((evento) => {
       abrirMenu.addEventListener(evento, handleClick);
-      fecharMenu.addEventListener(evento, removeClass);
     });
   }
 }

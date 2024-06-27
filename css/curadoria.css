@@ -1,0 +1,86 @@
+.curadoria {
+  display: flex;
+  padding: 80px 20px;
+  justify-content: center;
+}
+
+.curadoria img {
+  max-width: 450px;
+}
+
+.curadoria-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.curadoria-content h1 {
+  font-family: "Inter", monospace;
+  font-size: 3rem;
+  max-width: 20ch;
+  color: #222222;
+  margin-bottom: 40px;
+}
+
+.curadoria-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.coin-list,
+.cript-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.capsula {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f5f3f3;
+  box-shadow: 1px 2px 5px #ccc;
+}
+
+.capsula h2 {
+  display: flex;
+  font-size: 1.15rem;
+  font-family: "Inter";
+  color: #404345;
+}
+
+.number {
+  font-family: "Encode Sans Expanded", "Roboto", monospace;
+  font-weight: 600;
+  letter-spacing: 0.018rem;
+  color: #666;
+}
+
+[data-numero] {
+  color: #666;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.clientes {
+  grid-column: 1/-1;
+}
+
+.client-number {
+  font-family: "Encode Sans Expanded", "Roboto", monospace;
+  font-weight: 600;
+  letter-spacing: 0.018rem;
+  /* text-shadow: 1px 1px 2px #222222; */
+  color: #dc5a5a;
+}
