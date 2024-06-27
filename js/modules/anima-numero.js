@@ -1,15 +1,35 @@
 export default function initAnimaNumero() {
   const numeros = document.querySelectorAll("[data-numero]");
 
-  // Tenho que conseguir um forma de colocar pontos vírgulas no texto, mas ele não aparecer na hora de transformar os numeros em number
   if (numeros.length) {
-    function animacao() {
+    function animaNumero() {
       numeros.forEach((numero) => {
-        const valor = numero.innerText;
-        const teste = +valor.replace(/,/g, ".");
-        console.log(teste);
+        const stringValue = numero.innerText;
+        const valor = +stringValue.replace(/\./g, "");
+        const incremento = Math.floor(valor / 10);
+        let start = 0;
+        console.log(valor);
+        const timer = setInterval(() => {
+          start = start + incremento;
+          numero.innerText = start;
+
+          if (start > valor) {
+            clearInterval(timer);
+            numero.innerText = stringValue;
+          }
+        }, 100);
       });
     }
-    animacao();
+
+    function handleMutation(mutation) {
+      if (mutation[0].target.classList.contains("ativo")) {
+        animaNumero();
+        observer.disconnect();
+      }
+    }
+
+    const observer = new MutationObserver(handleMutation);
+    const observerTarget = document.querySelector(".curadoria");
+    observer.observe(observerTarget, { attributes: true });
   }
 }

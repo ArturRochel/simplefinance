@@ -42,11 +42,11 @@
 .informacoes li::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: -18px;
   width: 10px;
-  height: 5px;
-  background: #3ca237;
+  height: 8px;
+  background: #0088cc;
   border-radius: 6px;
 }
 

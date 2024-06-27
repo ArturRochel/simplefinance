@@ -24,6 +24,8 @@
 .curadoria-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -32,6 +34,7 @@
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
 }
@@ -56,6 +59,7 @@
   font-size: 1.15rem;
   font-family: "Inter";
   color: #404345;
+  align-items: center;
 }
 
 .number {
@@ -85,6 +89,51 @@
   color: #dc5a5a;
 }
 
-.client-content {
+/* .client-content {
   display: inline-block;
+} */
+
+@media (max-width: 700px) {
+  .curadoria {
+    padding: 20px 20px;
+  }
+
+  .curadoria-content {
+    padding: 0px;
+    max-width: 400px;
+  }
+
+  .curadoria-content h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .curadoria-list {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .curadoria .cotacao {
+    display: none;
+  }
+
+  .coin-list,
+  .cript-list {
+    justify-content: center;
+  }
+
+  .capsula {
+    max-width: 280px;
+  }
+
+  .capsula h2 {
+    font-size: 1.05rem;
+  }
+
+  .number {
+    font-size: 0.6rem;
+  }
+
+  .number span {
+    font-size: 1.05rem;
+  }
 }

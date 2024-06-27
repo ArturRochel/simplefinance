@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 50px;
   padding: 30px 20px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(to top, #e2ebf0 0%, #cfd9df 100%);
 }
@@ -13,9 +13,13 @@
 }
 
 .footer-list {
-  font-family: "Lato";
+  font-family: "Lato", "Roboto", Arial;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #666;
+  text-shadow: 1px 2px 5px #fff;
+  letter-spacing: 0.06rem;
   line-height: 26px;
-  text-shadow: 1px 1px 2px #999999;
 }
 
 .footer p {
