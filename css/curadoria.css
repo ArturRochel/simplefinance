@@ -10,6 +10,8 @@
 
 .curadoria-content {
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -64,13 +66,15 @@
 
 .number {
   font-family: "Encode Sans Expanded", "Roboto", monospace;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.018rem;
   color: #666;
 }
 
-[data-numero] {
+.number span {
   color: #666;
+  font-size: 1.15rem;
 }
 
 .icon {
@@ -81,17 +85,24 @@
   grid-column: 1/-1;
 }
 
+.clientes h2 {
+  font-size: 1.15rem;
+}
+
 .client-number {
   font-family: "Encode Sans Expanded", "Roboto", monospace;
   font-weight: 600;
   letter-spacing: 0.018rem;
   /* text-shadow: 1px 1px 2px #222222; */
   color: #dc5a5a;
+  font-size: 1.15rem;
 }
 
 /* .client-content {
   display: inline-block;
 } */
+
+/* MEDIA QUERY - MOBILE */
 
 @media (max-width: 700px) {
   .curadoria {
@@ -101,6 +112,8 @@
   .curadoria-content {
     padding: 0px;
     max-width: 400px;
+    justify-content: center;
+    align-items: center;
   }
 
   .curadoria-content h1 {
