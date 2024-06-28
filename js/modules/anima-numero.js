@@ -17,7 +17,7 @@ export default function initAnimaNumero() {
             clearInterval(timer);
             numero.innerText = stringValue;
           }
-        }, 100);
+        }, 150);
       });
     }
 

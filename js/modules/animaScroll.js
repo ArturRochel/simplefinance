@@ -1,6 +1,6 @@
 export default function initAnimaScroll() {
   const sections = document.querySelectorAll("[data-scroll]");
-  const windowHalf = window.innerHeight * 0.55;
+  const windowHalf = window.innerHeight * 0.65;
 
   if (sections.length) {
   }

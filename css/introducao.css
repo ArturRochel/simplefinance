@@ -144,12 +144,15 @@
   margin: 0;
 }
 
+/* MEDIA QUERY - MOBILE */
+
 @media (max-width: 700px) {
   .introducao-bg {
     padding-top: 10px;
     padding-bottom: 10px;
   }
   .introducao {
+    flex-direction: column;
     padding: 40px 20px;
   }
 

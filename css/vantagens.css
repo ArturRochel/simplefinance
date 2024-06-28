@@ -1,10 +1,16 @@
 .vantagens {
   display: flex;
+  gap: 50px;
+  justify-content: center;
   padding: 80px 20px;
 }
 
-.vantagens img {
-  max-width: 450px;
+/* .vantagens img {
+  max-width: 350px;
+} */
+
+.screen01 {
+  width: 350px;
 }
 
 .vantagens-content {

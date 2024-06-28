@@ -98,6 +98,20 @@
   font-size: 1.15rem;
 }
 
+.client-text {
+  font-family: "Lato", monospace;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: #55555c;
+  padding: 10px;
+}
+
+.cotacao {
+  max-height: 820px;
+}
+
 /* .client-content {
   display: inline-block;
 } */
@@ -148,5 +162,10 @@
 
   .number span {
     font-size: 1.05rem;
+  }
+
+  .client-text {
+    font-size: 0.785rem;
+    padding: 5px;
   }
 }
