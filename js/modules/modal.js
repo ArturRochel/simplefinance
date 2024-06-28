@@ -37,12 +37,6 @@ export default function initModal() {
       }
     }
 
-    botaoAbrir.addEventListener("touchstart", toggleModal);
-    abrirBaixar.addEventListener("touchstart", toggleModal);
-    botaoFechar.addEventListener("touchstart", toggleModal);
-    modalContainer.addEventListener("toucshstart", verifica);
-    modalDownload.addEventListener("touchstart", verifica);
-
     botaoAbrir.addEventListener("click", toggleModal);
     abrirBaixar.addEventListener("click", toggleModal);
     botaoFechar.addEventListener("click", toggleModal);

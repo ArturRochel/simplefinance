@@ -6,7 +6,8 @@
   color: black;
 }
 
-body {
+body,
+html {
   overflow-x: hidden;
 }
 

@@ -8,7 +8,6 @@ export default function initAnimaNumero() {
         const valor = +stringValue.replace(/\./g, "");
         const incremento = Math.floor(valor / 10);
         let start = 0;
-        console.log(valor);
         const timer = setInterval(() => {
           start = start + incremento;
           numero.innerText = start;

@@ -1,5 +1,7 @@
 .curadoria {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   padding: 80px 20px;
   justify-content: center;
 }
@@ -18,7 +20,6 @@
 .curadoria-content h1 {
   font-family: "Inter", monospace;
   font-size: 3rem;
-  max-width: 20ch;
   color: #222222;
   margin-bottom: 40px;
 }
@@ -120,12 +121,13 @@
 
 @media (max-width: 700px) {
   .curadoria {
-    padding: 20px 20px;
+    box-sizing: border-box;
+    padding: 10px 10px;
   }
 
   .curadoria-content {
     padding: 0px;
-    max-width: 400px;
+    max-width: 380px;
     justify-content: center;
     align-items: center;
   }
@@ -133,6 +135,7 @@
   .curadoria-content h1 {
     text-align: center;
     font-size: 2rem;
+    max-width: 15ch;
   }
   .curadoria-list {
     grid-template-columns: 1fr;
