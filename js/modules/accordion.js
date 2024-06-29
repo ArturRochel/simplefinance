@@ -2,7 +2,7 @@ export default function initAccordion() {
   const perguntas = document.querySelectorAll('[data-accordion="pergunta"]');
   const respostas = document.querySelectorAll('[data-accordion="resposta"]');
 
-  if (perguntas && respostas) {
+  if (perguntas.length && respostas.length) {
     perguntas[0].closest(".teste").classList.add("ativo");
     perguntas[0].classList.add("ativo");
     respostas[0].classList.add("ativo");

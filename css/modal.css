@@ -17,7 +17,7 @@
 
 .modal {
   color: #333333;
-  background: white;
+  background-image: linear-gradient(to top, #e3e6e8 0%, #ebeff0 100%);
   padding: 40px;
   border-radius: 8px;
   border: 10px solid #073a05;

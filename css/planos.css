@@ -1,0 +1,126 @@
+.planos-content {
+  padding: 40px 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.planos-content h1 {
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #202020;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  letter-spacing: 0.1rem;
+}
+.planos {
+  background: rgb(234, 233, 241);
+  background: linear-gradient(
+    180deg,
+    rgba(234, 233, 241, 1) 0%,
+    rgba(226, 226, 235, 1) 48%,
+    rgba(227, 244, 247, 1) 100%
+  );
+}
+
+.planos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.plano {
+  background: #fff;
+  border: 1px solid #bcbcbc;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 350px;
+  min-width: 300px;
+  align-self: center;
+  justify-self: center;
+}
+
+.bolha {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+  gap: 10px;
+  border-radius: 4px;
+  background-color: #99d3f46a;
+  background-image: linear-gradient(160deg, #a5d0e974 0%, #bfe3df8b 100%);
+  margin-bottom: 10px;
+}
+
+.bolha span {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #404040;
+}
+
+.plano-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.plano-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: 1px solid #808080;
+  padding-bottom: 15px;
+}
+
+.plano-list li:last-child {
+  border-bottom: none;
+}
+
+.item {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.child {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222222;
+}
+/* MEDIA QUERY - MOBILE */
+@media (max-width: 700px) {
+  .planos-content h1 {
+    font-size: 1.25rem;
+    max-width: 25ch;
+    margin-bottom: 20px;
+  }
+  .planos-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .bolha {
+    gap: 5px;
+    margin-bottom: 3px;
+  }
+
+  .bolha span {
+    font-size: 1rem;
+  }
+
+  .plano-list li {
+    padding-bottom: 8px;
+  }
+
+  .child {
+    font-size: 0.9rem;
+  }
+}
