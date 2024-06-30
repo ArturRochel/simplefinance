@@ -5,6 +5,7 @@ import initFuncionamento from "./modules/funcionamento.js";
 import initAnimaNumero from "./modules/anima-numero.js";
 import initAnimaScroll from "./modules/animaScroll.js";
 import initEfeitWidth from "./modules/efeito-width.js";
+import initPlanos from "./modules/planos.js";
 
 initModal();
 initAccordion();
@@ -13,3 +14,4 @@ initFuncionamento();
 initAnimaNumero();
 initAnimaScroll();
 initEfeitWidth();
+initPlanos();
