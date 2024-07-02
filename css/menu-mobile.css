@@ -1,97 +1,112 @@
-.menu-mobile,
-.abrirMenu {
+.nav-mobile {
   display: none;
 }
-@media (max-width: 800px) {
-  [data-menu="list"],
-  [data-menu="login"] {
+
+@media (max-width: 768px) {
+  .nav-menu,
+  .menu-buttons {
     display: none;
   }
 
-  .abrirMenu {
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border-radius: 6px;
-    gap: 6px;
-    background-color: #0093e9;
-    background-image: linear-gradient(90deg, #0093e9 0%, #80d0c7 62%);
-    z-index: 200;
-  }
-
-  .abrirMenu div {
-    width: 32px;
-    height: 4px;
-    background: #111;
+  .nav-mobile {
+    display: block;
   }
 
   .menu-mobile {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    width: 50vw;
-    height: 100vh;
-    padding: 10px;
-    top: 0;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    gap: 30px;
+    top: 12%;
     right: 0;
-    background: #85858564;
-    backdrop-filter: blur(40px);
-    z-index: 400;
-    overflow: hidden;
-    transform: translateX(100%);
+    z-index: 300;
+    max-width: 180px;
+    height: 100vh;
+    background-color: #8bc6ec;
+    background-image: linear-gradient(to left, #cfd9df 0%, #e2ebf0 100%);
+  }
+
+  .menu-mobile.active {
+    display: flex;
+  }
+
+  .btn-mobile {
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+
+  .hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px;
+    background: linear-gradient(-180deg, #bcc5ce 0%, #929ead 98%),
+      radial-gradient(
+        at top left,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      );
+    background-blend-mode: screen;
+    border-radius: 4px;
+    box-shadow: 1px 2px 5px #666;
+  }
+
+  .hamburguer.active {
+    position: relative;
+    width: 34px;
+    height: 28px;
+    padding: 3px;
+  }
+
+  .hamburguer span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    position: relative;
+
+    background: #081b38;
+    border-radius: 3px;
+
+    z-index: 1;
+  }
+
+  .one {
+    transition: 0.4s;
+  }
+
+  .two {
+    opacity: 1;
     transition: 0.3s;
   }
 
-  .menu-mobile.ativo {
-    transform: translateX(0);
+  .three {
+    transition: 0.4s;
   }
 
-  .fecharMenu {
-    width: min-content;
-    height: min-content;
+  .hamburguer.active .two {
+    opacity: 0;
+    transition: 0.2s;
   }
 
-  .menu-mobile nav {
-    padding-top: 12vh;
+  .hamburguer.active .one {
+    position: absolute;
+    bottom: 15px;
+    right: 6px;
+    transform: rotate(45deg);
+    transition: 0.3s;
   }
 
-  .menu-mobile .itens {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .itens li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu-mobile ul li a {
-    font-family: "Lato", monospace;
-    font-size: 1rem;
-    text-shadow: 1px 1px 2px black;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .redes {
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 100px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .redes a {
-    justify-self: center;
-    align-self: center;
-    text-align: center;
+  .hamburguer.active .three {
+    position: absolute;
+    bottom: 15px;
+    right: 6px;
+    transform: rotate(-45deg);
+    transition: 0.3s;
   }
 }
