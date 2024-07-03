@@ -1,0 +1,165 @@
+/* MODAL DE LOGIN MOBILE */
+.login-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+  transition: 0.3s;
+}
+
+.login-mobile.active {
+  display: flex;
+  transition: 0.3s;
+}
+
+.login-fechar {
+  position: absolute;
+  top: -12px;
+  right: -10px;
+}
+
+.login-content {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  width: 270px;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+  animation: showModal 0.4s forwards;
+}
+
+.modal-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-login h1 {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 2rem;
+}
+
+.modal-login form {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  justify-self: center;
+}
+
+.modal-login label {
+  font-family: "Roboto";
+  font-size: 1.025rem;
+  margin-bottom: 5px;
+}
+
+.modal-login input {
+  font-family: "IBM Plex Mono";
+  font-size: 0.7rem;
+  padding: 0.4rem 0.3rem;
+  width: 150px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #666;
+  margin-bottom: 10px;
+}
+
+.modal-login img {
+  justify-self: center;
+  align-self: center;
+}
+
+.login-button {
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: 500;
+  background-image: linear-gradient(
+    -225deg,
+    #22e1ff 0%,
+    #1d8fe1 48%,
+    #625eb1 100%
+  );
+  color: white;
+  justify-self: center;
+  border: none;
+  padding: 0.5rem 0.3rem;
+  border-radius: 6px;
+  width: 150px;
+  margin-top: 30px;
+  grid-column: 1/-1;
+}
+
+.contas {
+  display: flex;
+  gap: 15px;
+  max-width: 150px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+  justify-self: center;
+  align-self: center;
+}
+
+.esqueceu {
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  color: #666;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* MODAL DE DOWNLOAD MOBILE */
+
+.download-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+  transition: 0.3s;
+}
+
+.download-mobile.active {
+  display: flex;
+  transition: 0.3s;
+}
+
+.download-content {
+  max-width: 240px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.download-content p {
+  font-family: "Inter";
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.plataformas-mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.plataformas-mobile a {
+  justify-self: center;
+  align-self: center;
+}

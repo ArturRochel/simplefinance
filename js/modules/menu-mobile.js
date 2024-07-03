@@ -3,6 +3,9 @@ export default function initMenuMobile() {
   const menuMobile = document.querySelector(".menu-mobile");
 
   function toggleMenu(event) {
+    if (event.type === "touchstart") {
+      event.preventDefault();
+    }
     event.preventDefault();
     hamburguer.classList.toggle("active");
     menuMobile.classList.toggle("active");

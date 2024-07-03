@@ -6,6 +6,7 @@ import initAnimaScroll from "./modules/animaScroll.js";
 import initEfeitWidth from "./modules/efeito-width.js";
 import initPlanos from "./modules/planos.js";
 import initMenuMobile from "./modules/menu-mobile.js";
+import initModalMobile from "./modules/modal-mobile.js";
 
 initModal();
 initAccordion();
@@ -15,3 +16,4 @@ initAnimaScroll();
 initEfeitWidth();
 initPlanos();
 initMenuMobile();
+initModalMobile();
