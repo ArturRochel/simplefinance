@@ -1,0 +1,15 @@
+.sobre-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.sobre-text {
+  font-family: "Manrope";
+  font-size: 1.25rem;
+}
+
+.sobre-title {
+  font-family: "Inter", Arial;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}

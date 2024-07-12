@@ -95,7 +95,7 @@
   font-weight: 600;
   letter-spacing: 0.018rem;
   /* text-shadow: 1px 1px 2px #222222; */
-  color: #dc5a5a;
+  color: #7db66d;
   font-size: 1.15rem;
 }
 
@@ -123,6 +123,7 @@
   .curadoria {
     box-sizing: border-box;
     padding: 10px 10px;
+    margin-bottom: 30px;
   }
 
   .curadoria-content {
